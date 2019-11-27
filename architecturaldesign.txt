@@ -1,0 +1,27 @@
+Architectural design:
+
+Database:
+
+I used the H2 database since this project wouldn't go live. It allowes me to flush the database everytime i restart the spring boot server.
+
+
+Back-end:
+
+In the back-end I decided to do this project in Java, using the Spring Boot framework.
+It allowes me to ignore a lot of configuration and boilerplate code. With a simple annotation (@Restcontroller above the class name in java) it can turn the back-end to a restful service.
+
+Model View Controller
+
+I used the MVC as design pattern to that promotes separation of concern. 
+
+The Model is our data structure, in spring boot we are able to give our pojo the annotation @Entity and it will create a table for us with columns.
+
+The View also known as our business logic, our service layer. In here we can manipulate what we want to do with the data before we persist it or send it to the client.
+
+The Controller known as view. 
+Is the API-controller. In here we enable the project to make REST API requests, you specify which request you want to make through the URI. 
+
+Front-end
+
+In the front-end the i used the React library.
+It allowes me to re-render the page when a state(data) changes. With React you're able to mix the HTML with CSS and JavaScript making it very powerful.
